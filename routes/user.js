@@ -5,7 +5,7 @@
 
    /**
     * @swagger
-    * /user:
+    * /users/user:
     *   get:
     *     summary: Retrieve a list of users
     *     responses:
