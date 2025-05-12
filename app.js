@@ -36,7 +36,7 @@
 
    const swaggerDocs = swaggerJSDoc(swaggerOptions);
    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
-//    app.use('/users', userRoutes); // Register user routes
+   app.use('/users', userRoutes);
    
 
    app.listen(port, () => {
