@@ -14,7 +14,7 @@
     */
 
    router.get('/user', (req, res) => {
-       res.status(200).json([{ name: 'John Doe' }, { name: 'Jane Doe' }]);
+       res.status(200).json([{ name: 'John Doe' }, { name: 'Jade Doe' }]);
    });
 
    module.exports = router;
