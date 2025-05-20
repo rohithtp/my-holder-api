@@ -31,6 +31,13 @@ curl http://localhost:3000/users/user
 ]
 ```
 
+```
+curl -XPOST http://localhost:3000/users/answer --header 'content-type: application/json'  --data '{"query":"get me metrics for 2234X"}'
+```
+```json
+{"answer":"Received query: get me metrics for 25A"}
+```
+
 ## API Documentation
 
 Swagger UI is available at: [http://localhost:3000/api-docs](http://localhost:3000/api-docs)

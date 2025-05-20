@@ -35,6 +35,7 @@
    };
 
    const swaggerDocs = swaggerJSDoc(swaggerOptions);
+   app.use(express.json());
    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
    app.use('/users', userRoutes);
    
