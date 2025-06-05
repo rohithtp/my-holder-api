@@ -3,9 +3,10 @@
    const swaggerUi = require('swagger-ui-express');
    const swaggerJSDoc = require('swagger-jsdoc');
    const userRoutes = require('./routes/user'); // Import user routes
+   const secondBrainRoutes = require('./routes/secondBrain'); // Import second brain routes
 
    const app = express();
-   const port = 3000;
+   const port = 8800;
 
    // Swagger definition
    const swaggerOptions = {
@@ -38,6 +39,7 @@
    app.use(express.json());
    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
    app.use('/users', userRoutes);
+   app.use('/api/second-brain', secondBrainRoutes);
    
 
    app.listen(port, () => {
